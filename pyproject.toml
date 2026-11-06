@@ -1,0 +1,29 @@
+[project]
+name = "magic-formula-screener"
+version = "1.0.0"
+description = "Stock screener combining Greenblatt's Magic Formula with valuation and momentum ranks"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+packages = ["magic_formula"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+extend-exclude = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

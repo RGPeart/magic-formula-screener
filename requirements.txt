@@ -1,0 +1,10 @@
+# Runtime (pinned to the versions the tests ran against)
+yfinance==1.8.0
+pandas==3.1.1
+numpy==2.5.4
+requests==2.34.2
+
+# Notebooks: backtesting charts and the Dash dashboard
+dash==4.5.0
+plotly==7.1.0
+nbformat==5.11.1

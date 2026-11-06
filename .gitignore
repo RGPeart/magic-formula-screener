@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Environments and secrets
+.env
+.venv/
+venv/
+
+# Notebooks, editors, OS
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+yfinance.cache
